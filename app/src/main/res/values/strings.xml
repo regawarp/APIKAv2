@@ -3,4 +3,8 @@
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="login">LOGIN</string>
+    <string name="beranda">Beranda</string>
+    <string name="agenda">Agenda</string>
+    <string name="proyek">Proyek</string>
+    <string name="program">Program</string>
 </resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="45dp"
+    android:background="@drawable/main_gradient_selector"
+    android:layout_gravity="center"
+    android:gravity="center">
+    <EditText
+        android:textSize="14sp"
+        android:background="@color/colorWhite"
+        android:hint="@string/username"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:drawableStart="@drawable/ic_account_circle_black_24dp"
+        android:layout_marginBottom="10dp"
+        android:drawablePadding="10dp"
+        android:padding="5dp"
+        />
+    <EditText
+        android:textSize="14sp"
+        android:padding="5dp"
+        android:background="@color/colorWhite"
+        android:hint="@string/password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_lock_outline_black_24dp"
+        android:layout_marginBottom="10dp"/>
+    <Button
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorPrimaryDark"/>
+</LinearLayout>

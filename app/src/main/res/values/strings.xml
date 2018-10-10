@@ -12,4 +12,10 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="agenda_baru">Agenda Baru</string>
     <string name="fitur_terkait">FITUR TERKAIT</string>
+    <string name="proyek_terbaru">PROYEK TERBARU</string>
+    <string name="rekomendasi_proyek">Rekomendasi Proyek</string>
+    <string name="lihat_seluruhnya">Lihat seluruhnya</string>
+    <string name="loker_baru">LOWONGAN KERJA BARU</string>
+    <string name="rek_loker">Rekomendasi Lowongan Kerja</string>
+    <string name="daftar_proyek_anda">Daftar Proyek Anda</string>
 </resources>

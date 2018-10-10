@@ -4,10 +4,37 @@
     android:layout_height="match_parent"
     tools:context="com.arjuna.apika.ProyekFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:text="@string/daftar_proyek_anda"
+                android:paddingBottom="10dp"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_proyek_anda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/ic_add_black_24dp"
+        android:tint="@color/colorWhite"
+        />
 
 </FrameLayout>

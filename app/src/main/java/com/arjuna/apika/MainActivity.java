@@ -26,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
         proyekFragment = new ProyekFragment();
         programFragment = new ProgramFragment();
 
-        Toolbar toolbar = findViewById(R.id.main_toolbar);
 
         BottomNavigationView mMainNav = findViewById(R.id.main_nav);
         setFragment(berandaFragment);

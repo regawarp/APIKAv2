@@ -2,14 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:title="@string/beranda"
         android:icon="@drawable/ic_home_black_24dp"
-        android:id="@+id/nav_home" />
+        android:id="@+id/nav_beranda" />
     <item android:title="@string/agenda"
         android:icon="@drawable/ic_today_black_24dp"
-        android:id="@+id/nav_event" />
+        android:id="@+id/nav_agenda" />
     <item android:title="@string/proyek"
         android:icon="@drawable/ic_folder_black_24dp"
-        android:id="@+id/nav_project" />
+        android:id="@+id/nav_proyek" />
     <item android:title="@string/program"
         android:icon="@drawable/ic_folder_black_24dp"
-        android:id="@+id/nav_loker" />
+        android:id="@+id/nav_program" />
 </menu>

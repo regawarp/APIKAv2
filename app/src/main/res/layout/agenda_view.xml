@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:paddingBottom="15dp">
+
+    <View
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/agenda_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Meet up with Friends"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/agenda_loc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="at Mc Donalds"/>
+    </LinearLayout>
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/agenda_date"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:text="JUNE 14"/>
+
+</LinearLayout>

@@ -9,7 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.arjuna.apika.adapter.AgendaBaruAdapter;
+import com.arjuna.apika.adapter.AgendaAdapter;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -37,13 +37,14 @@ public class AgendaFragment extends Fragment {
         // Inflate the layout for this fragment
         View view =  inflater.inflate(R.layout.fragment_agenda, container, false);
 
-//        recyclerView = view.findViewById(R.id.rv_agenda_baru);
-//
-//        LinearLayoutManager layoutManager = new LinearLayoutManager(getContext(),LinearLayoutManager.HORIZONTAL,true);
-//        recyclerView.setLayoutManager(layoutManager);
-//        initializeData();
-//        AgendaBaruAdapter agendaBaruAdapter = new AgendaBaruAdapter(agendaList);
-//        recyclerView.setAdapter(agendaBaruAdapter);
+        recyclerView = view.findViewById(R.id.rv_agenda);
+
+        LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
+        recyclerView.setLayoutManager(layoutManager);
+        initializeData();
+        AgendaAdapter agendaAdapter = new AgendaAdapter(agendaList);
+        recyclerView.setAdapter(agendaAdapter);
+
         return view;
     }
 

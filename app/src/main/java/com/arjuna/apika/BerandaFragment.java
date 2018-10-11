@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.arjuna.apika.adapter.AgendaBaruAdapter;
+import com.arjuna.apika.adapter.LokerAdapter;
 import com.arjuna.apika.adapter.ProyekAdapter;
 
 import java.util.ArrayList;
@@ -25,8 +26,9 @@ public class BerandaFragment extends Fragment {
 
     List<Agenda> agendaList;
     List<Proyek> proyekList;
+    List<Loker> lokerList;
 
-    private RecyclerView recyclerView,rvRekProyek;
+    private RecyclerView recyclerView,rvRekProyek,rvRekLoker;
 
     public BerandaFragment() {
         // Required empty public constructor
@@ -40,6 +42,7 @@ public class BerandaFragment extends Fragment {
 
         recyclerView = view.findViewById(R.id.rv_agenda_baru);
         rvRekProyek = view.findViewById(R.id.rv_rek_proyek);
+        rvRekLoker = view.findViewById(R.id.rv_rek_loker);
 
         initializeData();
 
@@ -53,6 +56,11 @@ public class BerandaFragment extends Fragment {
         rvRekProyek.setLayoutManager(layoutManager1);
         ProyekAdapter proyekAdapter = new ProyekAdapter(proyekList);
         rvRekProyek.setAdapter(proyekAdapter);
+
+        LinearLayoutManager layoutManager2 = new LinearLayoutManager(getContext());
+        rvRekLoker.setLayoutManager(layoutManager2);
+        LokerAdapter lokerAdapter = new LokerAdapter(lokerList);
+        rvRekLoker.setAdapter(lokerAdapter);
 
         return view;
     }
@@ -69,6 +77,11 @@ public class BerandaFragment extends Fragment {
         proyekList.add(new Proyek(1, "Proyek 1", "Ahli PC", 5000000, "Jawa", c, c, c, 2));
         proyekList.add(new Proyek(2, "Proyek 2", "Ahli PC", 500023100, "Jawa", c, c, c, 2));
         proyekList.add(new Proyek(3, "Proyek 3", "Ahli PC", 500000120, "Jawa", c, c, c, 2));
+
+        lokerList = new ArrayList<>();
+        lokerList.add(new Loker(1, "Google Inc.", "Senior Programmer", c, 2));
+        lokerList.add(new Loker(2, "Buka", "Junior Programmer", c, 1));
+        lokerList.add(new Loker(3, "Pedia", "Pro gamer", c, 1));
     }
 
 }

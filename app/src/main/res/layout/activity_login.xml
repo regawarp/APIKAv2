@@ -7,6 +7,7 @@
     android:layout_gravity="center"
     android:gravity="center">
     <EditText
+        android:id="@+id/username"
         android:textSize="14sp"
         android:background="@color/colorWhite"
         android:hint="@string/username"
@@ -18,6 +19,7 @@
         android:padding="5dp"
         />
     <EditText
+        android:id="@+id/password"
         android:textSize="14sp"
         android:padding="5dp"
         android:background="@color/colorWhite"
@@ -28,6 +30,7 @@
         android:drawableStart="@drawable/ic_lock_outline_black_24dp"
         android:layout_marginBottom="10dp"/>
     <Button
+        android:id="@+id/btn_login"
         android:fontFamily="sans-serif-condensed"
         android:text="@string/login"
         android:layout_width="match_parent"

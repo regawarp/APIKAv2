@@ -1,12 +1,15 @@
 package com.arjuna.apika;
 
+import android.os.Parcelable;
+
+import java.util.ArrayList;
 import java.util.Date;
 
 /**
  * Created by Regawa on 10/10/2018.
  */
 
-public class Proyek {
+public class Proyek extends ArrayList<Parcelable> {
     private int projectId;
     private String projectName;
     private String projectQualification;

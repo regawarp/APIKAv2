@@ -1,7 +1,9 @@
 package com.arjuna.apika;
 
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -23,6 +25,7 @@ import java.util.List;
 public class ProyekFragment extends Fragment {
 
     private RecyclerView rvProyek;
+    private FloatingActionButton fabTambahProyek;
     List<Proyek> proyekList;
 
     public ProyekFragment() {
@@ -35,6 +38,15 @@ public class ProyekFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_proyek, container, false);
+
+        fabTambahProyek = view.findViewById(R.id.fab_tambah_proyek);
+        fabTambahProyek.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getContext(),TambahProyekActivity.class);
+                startActivity(i);
+            }
+        });
 
         rvProyek = view.findViewById(R.id.rv_proyek_anda);
         initializeData();

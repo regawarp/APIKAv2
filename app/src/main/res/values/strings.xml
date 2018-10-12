@@ -20,4 +20,16 @@
     <string name="daftar_proyek_anda">Daftar Proyek Anda</string>
     <string name="events">Events</string>
     <string name="daftar_program_anda">Daftar Program Anda</string>
+    <string name="judul_proyek">Judul Proyek</string>
+    <string name="tambah_proyek">Tambah Proyek</string>
+    <string name="kategori_proyek">Kategori Proyek</string>
+    <string name="kualifikasi_proyek">Kualifikasi Proyek</string>
+    <string name="deskripsi_proyek">Deskripsi Proyek</string>
+    <string name="harga_proyek">Harga Proyek</string>
+    <string name="batas_penawaran_proyek">Batas Penawaran Proyek</string>
+    <string name="mulai_proyek">Mulai Proyek</string>
+    <string name="proyek_berakhir">Proyek Berakhir</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="proyek_sudah_ditawar">Proyek ini sudah ditawar oleh</string>
+    <string name="mulai_penawaran">Mulai Penawaran</string>
 </resources>

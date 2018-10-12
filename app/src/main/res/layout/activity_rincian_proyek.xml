@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_rincian_proyek"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.arjuna.apika.RincianProyekActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+        <TextView
+            android:id="@+id/rincian_judul_proyek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingBottom="3dp"/>
+
+        <TextView
+            android:id="@+id/rincian_kategori_proyek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:paddingBottom="3dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:text="@string/deskripsi"
+            android:textAllCaps="true"
+            android:paddingBottom="1dp"/>
+
+        <TextView
+            android:id="@+id/rincian_deskripsi_proyek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:paddingBottom="6dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:text="@string/kualifikasi_proyek"
+            android:paddingBottom="1dp"/>
+
+        <TextView
+            android:id="@+id/rincian_kualifikas_proyek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:paddingBottom="6dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:text="@string/harga_proyek"
+            android:paddingBottom="1dp"/>
+
+        <TextView
+            android:id="@+id/rincian_harga_proyek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:background="@color/colorGrey"/>
+
+        <TextView
+            android:paddingTop="6dp"
+            android:paddingBottom="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:text="@string/batas_penawaran_proyek"/>
+
+        <TextView
+            android:id="@+id/rincian_batas_penawaran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:paddingBottom="6dp"/>
+
+        <TextView
+            android:paddingBottom="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:text="@string/mulai_proyek"/>
+
+        <TextView
+            android:id="@+id/rincian_mulai_proyek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:paddingBottom="6dp"/>
+
+        <TextView
+            android:paddingBottom="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:text="@string/proyek_berakhir"/>
+
+        <TextView
+            android:id="@+id/rincian_akhir_proyek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:paddingBottom="6dp"/>
+
+        <TextView
+            android:paddingBottom="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:text="@string/proyek_sudah_ditawar"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_ditawar_oleh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"/>
+
+
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:text="@string/mulai_penawaran"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimaryDark"/>
+    </LinearLayout>
+
+</ScrollView>
